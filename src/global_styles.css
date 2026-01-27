@@ -29,6 +29,7 @@
   
   /* --- CONTENEUR DE LA MODALE --- */
   .modal-container {
+    display:block;
     background: var(--modal-bg);
     width: 90%;
     max-width: 500px;
