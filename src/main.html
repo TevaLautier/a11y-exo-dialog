@@ -1,0 +1,23 @@
+    <!-- Bouton déclencheur -->
+<button (click)="openModal()">Modifier mon profil</button>
+{{isOpen}}
+<!-- Background de la modale -->
+<div class="modal-overlay" *ngIf="isOpen">
+  
+  <div class="modal-container">
+    <div class="modal-header">
+      <span class="title">Paramètres du profil</span>
+      <button (click)="closeModal()">X</button>
+    </div>
+
+    <div class="modal-body">
+      <p>Souhaitez-vous vraiment enregistrer ces modifications ?</p>
+      <input type="text" placeholder="Votre nouveau nom">
+    </div>
+
+    <div class="modal-footer">
+      <button (click)="closeModal()">Annuler</button>
+      <button (click)="save()">Confirmer</button>
+    </div>
+  </div>
+</div>
